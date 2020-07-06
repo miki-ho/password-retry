@@ -1,15 +1,19 @@
 password = 'a123456'
 i = 3
-while True:
+while i > 0:
+	i = i - 1
 	pwd = input('please input password:')
 	if pwd == password:
 		print('login success')
 		break
-	else:
-		i = i - 1
-		print('password wrong, 還有', i,'次機會')
-		if i == 0:
-			break
+	else:		
+		print('password wrong')
+		if i > 0:
+			print('還有', i,'次機會')
+		else:
+			print('no chance')
+			
+
 
 
 
